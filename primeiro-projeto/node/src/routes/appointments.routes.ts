@@ -16,7 +16,9 @@ appointmentsRouter.post('/', (request, response) => {
     const { provider, date } = request.body;
 
     const parsedDate = startOfHour(parseISO(date));
-    const findAppointmentInSameDate = appointments.find(appointment => isEqual(parsedDate, appointment.date))
+    const findAppointmentInSameDate = appointments.find(appointment =>
+        isEqual(parsedDate, appointment.date),
+    );
 
     if (findAppointmentInSameDate) {
         return response
@@ -28,11 +30,11 @@ appointmentsRouter.post('/', (request, response) => {
         id: uuid(),
         provider,
         date: parsedDate,
-    }
+    };
 
     appointments.push(appointment);
 
     return response.json(appointment);
-})
+});
 
 export default appointmentsRouter;
