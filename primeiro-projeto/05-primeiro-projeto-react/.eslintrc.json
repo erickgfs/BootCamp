@@ -32,6 +32,10 @@
         "tsx": "never"
       }
     ],
+    // "@typescript-eslint/explicit-function-return-type": [
+    //   "erro",
+    //   { "allorExpressions": true }
+    // ],
     "prettier/prettier": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
@@ -39,7 +43,12 @@
     "import/prefer-default-export": "off",
     "react/jsx-one-expression-per-line": "off",
     "arrow-body-style": "off",
-    "no-use-before-define": "off"
+    "no-use-before-define": "off",
+    "arrow-parens": "off",
+    "camelcase": "off",
+    "implicit-arrow-linebreak": "off",
+    "operator-linebreak": "off",
+    "indent": "off"
   },
   "settings": {
     "import/resolver": {
