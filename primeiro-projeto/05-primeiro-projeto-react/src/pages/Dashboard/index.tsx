@@ -5,7 +5,7 @@ import api from '../../services/api';
 
 import logoImg from '../../assets/logo.svg';
 
-import { Title, Form, Repositories, Error } from './styles';
+import { Title, Form, Repositories, Error } from './styles'; //eslint-disable-line
 
 interface Repository {
   full_name: string;
