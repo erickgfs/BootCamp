@@ -48,7 +48,9 @@
     "camelcase": "off",
     "implicit-arrow-linebreak": "off",
     "operator-linebreak": "off",
-    "indent": "off"
+    "indent": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/prop-types": "off"
   },
   "settings": {
     "import/resolver": {
